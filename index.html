@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Początek</title>
+	</head>
+	
+	<body>
+		<h1>PIERWSZE KROKI</h1>
+		<button onclick="document.getElementById('demo').innerHTML='Heniek to nacisknął'">Nacisknij</button>
+		
+		<p id="demo">Tutej pojawi się napis</p>
+		
+		<script>
+			"use strict";
+			function Person() {}
+			var per = new Person;
+			console.log(per instanceof Person);
+			console.log(per.constructor);
+			var proto = Object.getPrototypeOf(per);
+			console.log(proto);
+			proto = per.__proto__;
+			console.log(proto);
+			console.log(Person.prototype.isPrototypeOf(per));
+			
+		</script>
+	</body>
+</html>
